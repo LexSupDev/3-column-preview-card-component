@@ -73,6 +73,14 @@ main {
     &--green {
         color: $dark-cyan;
     }
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: $light-gray;
+        border: 2px solid $light-gray;
+        padding: 13px 30px;
+    }
 }
 
 /* Footer   */

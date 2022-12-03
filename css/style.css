@@ -76,6 +76,12 @@ main {
 .card__link--green {
   color: #004241;
 }
+.card__link:hover, .card__link:focus {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+  padding: 13px 30px;
+}
 
 /* Footer   */
 footer {
