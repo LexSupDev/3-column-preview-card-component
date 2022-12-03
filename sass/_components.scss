@@ -1,0 +1,140 @@
+main {
+    margin-top: 170px;
+}
+
+/*  Card    */
+
+.card-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card__item {
+    max-width: 307px;
+    padding: 48px;
+    box-sizing: border-box;
+
+    &--orange {
+        background-color: $orange;
+    }
+
+    &--cyan {
+        background-color: $cyan;
+    }
+
+    &--green {
+        background-color: $dark-cyan;
+    }
+
+    &:first-child{
+        border-radius: 10px 0 0 10px;
+    }
+
+    &:last-child{
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.card__title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: $light-gray;
+}
+
+.card__desc {
+    line-height: 1.65;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__link {
+    display: block;
+    margin-top: 83px;
+    background-color: $light-gray;
+    padding: 15px 32px;
+    width: max-content;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+
+    &--orange {
+        color: $orange;
+    }
+
+    &--cyan {
+        color: $cyan;
+    }
+
+    &--green {
+        color: $dark-cyan;
+    }
+}
+
+/* Footer   */
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.attribution {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.attribution__link {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+
+    &:hover {
+        color: $accent-color;
+    } 
+    &:active {
+        color: $primary-color;
+    }
+}
+
+/*  Media Queries   */
+
+@media screen and (max-width: $mobile-size) {
+    main {
+        margin-top: 90px;
+    }
+
+    .card-list {
+        flex-wrap: wrap;
+    }
+
+    .card__item {
+        min-width: 327px;
+        &:first-child{
+            border-radius: 10px 10px 0 0;
+        }
+    
+        &:last-child{
+            border-radius: 0 0 10px 10px;
+        }
+    }
+
+    .card__link {
+        margin-top: 22px;
+    }
+
+    .attribution {
+        flex-wrap: wrap;
+    }
+
+    .attribution__p {
+        margin: 0;
+    }
+}

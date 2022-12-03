@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  margin: 0 auto;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+main {
+  margin-top: 170px;
+}
+
+/*  Card    */
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.card__item {
+  max-width: 307px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+.card__item--orange {
+  background-color: #e38826;
+}
+.card__item--cyan {
+  background-color: #006970;
+}
+.card__item--green {
+  background-color: #004241;
+}
+.card__item:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.card__item:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: hsl(0deg, 0%, 95%);
+}
+
+.card__desc {
+  line-height: 1.65;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.card__link {
+  display: block;
+  margin-top: 83px;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 15px 32px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+}
+.card__link--orange {
+  color: #e38826;
+}
+.card__link--cyan {
+  color: #006970;
+}
+.card__link--green {
+  color: #004241;
+}
+
+/* Footer   */
+footer {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.attribution {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.attribution__link:hover {
+  color: #7b879d;
+}
+.attribution__link:active {
+  color: #1f3251;
+}
+
+/*  Media Queries   */
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 90px;
+  }
+  .card-list {
+    flex-wrap: wrap;
+  }
+  .card__item {
+    min-width: 327px;
+  }
+  .card__item:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .card__item:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+  .card__link {
+    margin-top: 22px;
+  }
+  .attribution {
+    flex-wrap: wrap;
+  }
+  .attribution__p {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
