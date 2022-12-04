@@ -14,7 +14,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshot
 
-![Screenshot of QR code component](./images/Screenshot.png)
+![Screenshot of 3-column preview card component](./images/Screenshot.png)
 
 
 ### Links
